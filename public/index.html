@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>OAuth</title>
+</head>
+
+<body>
+    <div>
+        <br>
+        <a id="githubOAuth" href="#"> ====> Signup With GitHub <==== </a>
+    </div>
+</body>
+
+<script>
+    let linkComponent = {
+        client_id: '82c0642983c60f165081',
+        redirect_uri: 'http://localhost:3000/oauth',
+        scope: 'read:user',
+        state: 'sleepy'
+    }
+    let smartText = Object.keys(linkComponent).map(val => {
+        return `${val}=` + encodeURIComponent(linkComponent[val]);
+    }).join('&');
+    let smartLink = `${'https://github.com/login/oauth/authorize'}?${smartText}`;
+    document.getElementById('githubOAuth').setAttribute('href', smartLink);
+</script>
+
+</html>
