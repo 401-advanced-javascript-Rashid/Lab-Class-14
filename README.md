@@ -8,7 +8,7 @@ is a table that tells a computer operating system which access rights each user 
 
 ## Links and Resources
 
-- [submission PR]()
+- [submission PR](https://github.com/401-advanced-javascript-Rashid/Lab-Class-14/pull/1)
 
 ## Setup
 
@@ -36,3 +36,4 @@ is a table that tells a computer operating system which access rights each user 
 - nodemon 
 
 ## UML 
+https://raw.githubusercontent.com/401-advanced-javascript-Rashid/Lab-Class-14/Access-Control/assest/20200215_221421.jpg
